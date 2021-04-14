@@ -99,7 +99,7 @@ $(document).ready(() => {
 
     $('[data-button-action="add-to-cart"]').prop('disabled', true);
 
-    const $form = $(event.target.form);
+    const $form = $(event.currentTarget.form);
     const query = `${$form.serialize()}&add=1&action=update`;
     const actionURL = $form.attr('action');
 
